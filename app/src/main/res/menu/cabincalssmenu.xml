@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/itemeconomy"
+        android:title="Economy" />
+    <item
+        android:id="@+id/itempremium"
+        android:title="Premium Economy" />
+    <item
+        android:id="@+id/itembusiness"
+        android:title="Business Class" />
+    <item
+        android:id="@+id/itemfirst"
+        android:title="First Class" />
+</menu>

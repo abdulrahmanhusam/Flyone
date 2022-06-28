@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ReservationActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="303dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cabin" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="305dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pas" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="319dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerto" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="401dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Round Trip" />
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="One Way" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/returningdate"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Return Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
+
+    <EditText
+        android:id="@+id/departdate"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Departure Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/returningdate"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
+
+    <TextView
+        android:id="@+id/txt_from"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="From"
+        android:saveEnabled="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
+
+    <Spinner
+        android:id="@+id/spinnerto"
+        android:layout_width="322dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_from" />
+
+    <TextView
+        android:id="@+id/txt_pas"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:hint=" Passengars"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departdate" />
+
+    <TextView
+        android:id="@+id/txt_cabin"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Cabin Class"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pas" />
+
+    <TextView
+        android:id="@+id/txt_payment"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Payment Method"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cabin" />
+
+    <Button
+        android:id="@+id/btn_searchflights"
+        android:layout_width="414dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="#76FF03"
+        android:text="SEARCH FLIGHTS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_payment" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="401dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_payment" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg"
+        app:srcCompat="@drawable/ic_from" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_to" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_date_range" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_people" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/ic_bag" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/ic_credit_card" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="313dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_from" />
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.753">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_blue_bright"
+            app:itemBackground="@android:color/holo_blue_bright"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+
+            app:menu="@menu/bottommenu" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

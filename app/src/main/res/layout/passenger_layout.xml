@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <EditText
+        android:id="@+id/txt_adult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_adult"
+        android:ems="10"
+        android:hint="Adult (greater than 12 years)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_child"
+        android:ems="10"
+        android:hint="Child (2-12 years)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_infant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_infant"
+        android:ems="10"
+        android:hint="Infant (less than 2 years)"
+        android:inputType="textPersonName" />
+</LinearLayout>

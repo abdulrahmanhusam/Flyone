@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <View
+        android:id="@+id/viewnotification"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#FF1744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewusers" />
+
+    <TextView
+        android:id="@+id/textnotification"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:text="                                                                                                                    Notifications"
+        android:textAlignment="center"
+        android:textColor="#1C1A1A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewnotification"
+        app:layout_constraintEnd_toEndOf="@+id/viewnotification"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="@+id/viewnotification"
+        app:layout_constraintTop_toTopOf="@+id/viewnotification" />
+
+    <View
+        android:id="@+id/viewbooking"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:background="#3D5AFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewusers"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/textbookings"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:text="                                                                                                                                    Bookings"
+        android:textAlignment="center"
+        android:textColor="#1C1A1A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewbooking"
+        app:layout_constraintEnd_toEndOf="@+id/viewbooking"
+        app:layout_constraintStart_toStartOf="@+id/viewbooking"
+        app:layout_constraintTop_toTopOf="@+id/viewbooking" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="413dp"
+        android:layout_height="107dp"
+        android:background="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewusers"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="39dp"
+        android:background="#00E5FF"
+        app:layout_constraintEnd_toStartOf="@+id/viewbooking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/textusers"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:text="                                                                                                                                      Users"
+        android:textAlignment="center"
+        android:textColor="#1C1A1A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewusers"
+        app:layout_constraintEnd_toEndOf="@+id/viewusers"
+        app:layout_constraintStart_toStartOf="@+id/viewusers"
+        app:layout_constraintTop_toTopOf="@+id/viewusers" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="313dp"
+        android:layout_height="60dp"
+        android:text="Admin Panel"
+        android:textAlignment="center"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <Button
+        android:id="@+id/buttonsigno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="121dp"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
